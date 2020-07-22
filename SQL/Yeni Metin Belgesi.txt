@@ -1,0 +1,33 @@
+1- SELECT InvoiceId, CustomerId, Total FROM invoices
+
+ORDER BY CustomerId, Total DESC;
+
+2- SELECT InvoiceId, CustomerId, Total FROM invoices
+
+ORDER BY Total DESC, CustomerId;
+
+3- In first siituation, our query is like ordering and grouping according to CustomerId then ordering in these results according to Total. 
+
+But in second situation , we sorted according to total amaount firstly and then we ordered the same total amounts according to CustomerID in asc.order.
+
+4- SELECT * FROM invoices
+
+WHERE total >= 10
+
+LIMIT 10;
+
+5- SELECT * FROM invoices
+
+WHERE total < 10
+
+LIMIT 5;
+
+6- SELECT Name FROM tracks
+
+WHERE Name LIKE "B%S";
+
+7- SELECT * FROM invoices
+
+WHERE BillingCountry IN ('USA', 'Germany', 'Canada', 'Norway') AND InvoiceDate LIKE "2010%"
+
+ORDER BY InvoiceDate DESC;
